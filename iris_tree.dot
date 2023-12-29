@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<node &#35;0<br/>petal width (cm) &le; -0.591<br/>entropy = 1.58<br/>samples = 105<br/>value = [34, 32, 39]<br/>class = 2>, fillcolor="#f6f1fd"] ;
+1 [label=<node &#35;1<br/>entropy = 0.0<br/>samples = 34<br/>value = [34, 0, 0]<br/>class = 0>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>petal length (cm) &le; 0.678<br/>entropy = 0.993<br/>samples = 71<br/>value = [0, 32, 39]<br/>class = 2>, fillcolor="#e8dbfa"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<node &#35;3<br/>petal width (cm) &le; 0.593<br/>entropy = 0.431<br/>samples = 34<br/>value = [0, 31, 3]<br/>class = 1>, fillcolor="#4ce88d"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>entropy = 0.0<br/>samples = 30<br/>value = [0, 30, 0]<br/>class = 1>, fillcolor="#39e581"] ;
+3 -> 4 ;
+5 [label=<node &#35;5<br/>sepal width (cm) &le; 0.098<br/>entropy = 0.811<br/>samples = 4<br/>value = [0, 1, 3]<br/>class = 2>, fillcolor="#ab7bee"] ;
+3 -> 5 ;
+6 [label=<node &#35;6<br/>entropy = 0.0<br/>samples = 3<br/>value = [0, 0, 3]<br/>class = 2>, fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label=<node &#35;7<br/>entropy = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = 1>, fillcolor="#39e581"] ;
+5 -> 7 ;
+8 [label=<node &#35;8<br/>petal width (cm) &le; 0.725<br/>entropy = 0.179<br/>samples = 37<br/>value = [0, 1, 36]<br/>class = 2>, fillcolor="#843ee6"] ;
+2 -> 8 ;
+9 [label=<node &#35;9<br/>petal width (cm) &le; 0.593<br/>entropy = 0.811<br/>samples = 4<br/>value = [0, 1, 3]<br/>class = 2>, fillcolor="#ab7bee"] ;
+8 -> 9 ;
+10 [label=<node &#35;10<br/>entropy = 0.0<br/>samples = 3<br/>value = [0, 0, 3]<br/>class = 2>, fillcolor="#8139e5"] ;
+9 -> 10 ;
+11 [label=<node &#35;11<br/>entropy = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = 1>, fillcolor="#39e581"] ;
+9 -> 11 ;
+12 [label=<node &#35;12<br/>entropy = 0.0<br/>samples = 33<br/>value = [0, 0, 33]<br/>class = 2>, fillcolor="#8139e5"] ;
+8 -> 12 ;
+}
